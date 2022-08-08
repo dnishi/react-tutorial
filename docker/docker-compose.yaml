@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  react:
+    build: .
+    container_name: react-container
+    image: react
+    ports:
+      - 3000:3000
+    volumes:
+      - ../src:/home/node/app
+    tty: true
+    environment:
+      - CHOKIDAR_USEPOLLING=true
