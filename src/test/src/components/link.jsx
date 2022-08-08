@@ -20,7 +20,7 @@ const Link = () => {
       setState(data.itemList);
     })();
   }, []);
-  console.log(Array.isArray(data));
+  console.log(Array.isArray(data))
   // if (!Array.isArray(data)) {
   //   return;
   // }
