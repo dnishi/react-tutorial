@@ -6,7 +6,7 @@ RUN apt-get update \
 RUN curl -sL https://deb.nodesource.com/setup_lts.x | bash -
 RUN apt-get install -y nodejs
 RUN npm i -g npm
-RUN useradd -m node
+RUN useradd -d /home/node -s /bin/bash node
 
 
 ENV TZ Asia/Tokyo
